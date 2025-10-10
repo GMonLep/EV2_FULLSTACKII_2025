@@ -19,10 +19,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} /> {/**Ruta de Inicio*/}
         </Routes>
-      
-
     </Router>
   );
 }
+
+//COMENTARIO DE PRUEBA
 
 export default App;
