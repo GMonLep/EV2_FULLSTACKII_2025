@@ -2,24 +2,33 @@ import { ProductosAlmacenados } from "../components/ProductosAlmacenados";
 import { useState, useEffect } from "react";
 import Botoncito from "../components/Boton";
 
+//para que notifique con toast
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function (){
     const productos = ProductosAlmacenados;
         
     const [carrito,setCarrito] = useState([]);
          
-    //funcion agregar un elemento al carrito
-    const agregarAlCarrito = (producto)=>{
-       const existe = carrito.find((p) => p.id === producto.id);
-       let nuevoCarrito;
-       if (existe) {
-        nuevoCarrito = carrito.map((p) =>
-        p.id === producto.id ? { ...p, cantidad: p.cantidad + 1 } : p);
+    //funcion agregar un elemento al carrito con toasts
+    const agregarAlCarritoConToast = (producto) => {
+    const existe = carrito.find((p) => p.id === producto.id);
+    let nuevoCarrito;
+    if (existe) {
+      nuevoCarrito = carrito.map((p) =>
+      p.id === producto.id ? { ...p, cantidad: p.cantidad + 1 } : p
+        );
       } else {
         nuevoCarrito = [...carrito, { ...producto, cantidad: 1 }];
-      };
+      }
       setCarrito(nuevoCarrito);
       localStorage.setItem("carrito", JSON.stringify(nuevoCarrito));
-    }
+      toast.success(`¡${producto.nombre} agregado al carrito!`, {
+        position: "top-right",
+        autoClose: 2000,
+      });
+    };
 
     useEffect(() => {
       const carritoGuardado = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -45,11 +54,12 @@ export default function (){
                     <div className="fs-1 text-primary">{p.precio.toLocaleString()}</div>
                     <h5 className="mb-3">{p.nombre}</h5>
                     <img className="img-fluid img-thumbnail mb-3 w-75" src={p.img} />
-                    <Botoncito onClick= {()=>agregarAlCarrito(p)}  texto="Agregar a carrito" />
+                    <Botoncito onClick= {()=>agregarAlCarritoConToast(p)}  texto="Agregar a carrito" />
                     </div>
                 </div>
           </div>
         ))}
+        <div><ToastContainer /> </div>
       </div>
 
       {/**FIN LISTA PRODUCTOS DISPONIBLES*/}
