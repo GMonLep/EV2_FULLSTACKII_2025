@@ -17,7 +17,7 @@ import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import Carrito from "./pages/Carrito";
 import Productos from './pages/Productos';
-
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
 
           <Route path="/nosotros" element={<Nosotros />}/>
           <Route path="/productos" element={<Productos />}/>
+          <Route path="/blog" element={<Blog />}/>
           
           <Route>
         <Route path="/carrito" element={<Carrito />} />

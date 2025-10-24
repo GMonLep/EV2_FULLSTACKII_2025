@@ -6,7 +6,7 @@ import destacado3 from '../assets/destacado3.jpg';
 //el resto de productos
 import producto1 from '../assets/producto1.jpg';
 import producto2 from '../assets/producto2.webp';
-import producto3 from '../assets/producto3.webp';
+import producto3 from '../assets/producto3.jpg';
 
 export const ProductosAlmacenados = [
   {

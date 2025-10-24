@@ -73,7 +73,7 @@ function Inicio(){
                                     <Botoncito onClick= {()=>agregarAlCarritoConToast(p)}  texto="Agregar a carrito" />
                                     </div>
                                 </div>
-                            </div>))};
+                            </div>))}
                             <div><ToastContainer /> </div>
                 </div>
             </div>
