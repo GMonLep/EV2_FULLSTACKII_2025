@@ -13,8 +13,9 @@ function Navbar(){
                     <Link className="nav-link text-white" to="/productos">Productos</Link>
                 </div>
                 <div className="navbar-nav d-flex flex-row gap-3">
-                    <Link className="nav-link text-white" to="/inicioSesion">INICIO SESION</Link>
-                    <Link className="nav-link text-white" to="/carrito">CARRITO</Link>
+                    <Link className="nav-link text-dark fw-bold bg-white " to="/carrito">Carrito</Link>
+                    <Link className="nav-link text-dark fw-bold bg-white" to="/inicioSesion">Iniciar sesión</Link>
+                    <Link className="nav-link text-dark fw-bold bg-white" to="/inicioSesion">Registrarse</Link>
                 </div>
             </div>
         </nav>
