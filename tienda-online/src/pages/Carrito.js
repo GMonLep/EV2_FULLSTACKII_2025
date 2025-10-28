@@ -1,4 +1,5 @@
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
+
 
 export default function Carrito(){
     
@@ -65,7 +66,7 @@ export default function Carrito(){
       <div className='alert alert-primary'>
         <li className="list-group-item d-flex justify-content-between align-items-center">
           <span> Total:  <strong>${total.toLocaleString()}</strong></span>
-        <button className="btn btn-success fw-bold btn-lg">Pagar</button>
+        <a href="./Checkout"><button className="btn btn-success fw-bold btn-lg" >Pagar</button></a>
         </li>
       </div> 
       {/**FIN MOSTRAR TOTAL */}
