@@ -19,6 +19,8 @@ import Carrito from "./pages/Carrito";
 import Productos from './pages/Productos';
 import Blog from './pages/Blog';
 import Checkout from './pages/Checkout';
+import InicioAdmin from './pages/admin/InicioAdmin';
+import Reportes from './pages/Reportes';
 
 function App() {
   return (
@@ -33,13 +35,16 @@ function App() {
           <Route path="/productos" element={<Productos />}/>
           <Route path="/blog" element={<Blog />}/>
           <Route path="/checkout" element={<Checkout />}/>
+          <Route path="/reportes" element={<Reportes />}/>
           
+
           <Route>
+            <Route path="/inicioAdmin" element={<InicioAdmin />}/>
         <Route path="/carrito" element={<Carrito />} />
         </Route>
 
       </Routes>
-      <Footer/>
+      <Footer/>ss
     </BrowserRouter>
   );
 }
