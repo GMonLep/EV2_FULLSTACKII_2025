@@ -45,23 +45,6 @@ function Inicio() {
         <div className="row justify-content-center text-center">
           <h1 className="display-2 fw-bold mb-2">Bienvenid@ a mi Tiendita</h1>
           <img className="img-responsive w-50 img-thumbnail mb-4" src={banner} alt="Banner principal" />
-
-          <div className="d-flex justify-content-center gap-3">
-            <button
-              className="btn btn-light btn-lg fw-bold text-primary"
-              onClick={() => (window.location.href = "/productos")}
-            >
-              Ver más productos
-            </button>
-
-            {/* Botón Registrarse */}
-            <button
-              className="btn btn-success btn-lg fw-bold text-white"
-              onClick={() => (window.location.href = "/registro")}
-            >
-              Registrarse
-            </button>
-          </div>
         </div>
       </section>
 
@@ -91,22 +74,7 @@ function Inicio() {
         </div>
       </div>
 
-      {/* Sección Categorías */}
-      <section className="bg-primary text-white py-5">
-        <div className="container text-center">
-          <h1 className="display-5 fw-bold">Categorías</h1>
-          <p className="lead">
-            Tenemos diferentes categorías para explorar y cubrir todas tus necesidades.
-          </p>
-        </div>
-      </section>
-
-      {/* Sección Ropa mujer */}
-      <section className="py-5">
-        <div className="row justify-content-center text-center">
-          <h1 className="display-6 fw-bold mb-2">Ropa mujer</h1>
-        </div>
-      </section>
+    
     </div>
   );
 }
