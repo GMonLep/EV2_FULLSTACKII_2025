@@ -18,7 +18,6 @@ import Contacto from "./pages/Contacto";
 import Carrito from "./pages/Carrito";
 import Productos from './pages/Productos';
 import Blog from './pages/Blog';
-import Checkout from './pages/Checkout';
 
 function App() {
   return (
@@ -32,7 +31,6 @@ function App() {
           <Route path="/nosotros" element={<Nosotros />}/>
           <Route path="/productos" element={<Productos />}/>
           <Route path="/blog" element={<Blog />}/>
-          <Route path="/checkout" element={<Checkout />}/>
           
           <Route>
         <Route path="/carrito" element={<Carrito />} />
