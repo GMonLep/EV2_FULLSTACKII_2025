@@ -22,12 +22,12 @@ JavaScript: Lógica del carrito, manejo de estado y renderizado dinámico.
 
 HTML: Estructura de las páginas.
 
-Frameworks y estilos
+Frameworks y estilos:
 
 Bootstrap 5:
 Utilizado para tarjetas, botones, formularios, espaciados y tipografía.
 
-Carrito y flujo de compra
+Carrito y flujo de compra:
 
 LocalStorage API:
 Permite persistir los productos agregados al carrito incluso al recargar la página.
