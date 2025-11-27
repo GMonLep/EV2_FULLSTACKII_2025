@@ -34,6 +34,8 @@ Render: despliege página en la web: https://ev2-fullstackii-2025.onrender.com/
 
 Swagger: testing del microservicio usuarios: https://usuarioservice-p81j.onrender.com/swagger-ui/index.html#
 
+AlwaysData: hosting base de datos: https://admin.alwaysdata.com/
+
 🎨 Frameworks y librerías de estilos
 
 Bootstrap 5
