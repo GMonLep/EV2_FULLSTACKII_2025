@@ -7,6 +7,17 @@ import destacado3 from '../assets/destacado3.jpg';
 import producto1 from '../assets/producto1.jpg';
 import producto2 from '../assets/producto2.webp';
 import producto3 from '../assets/producto3.jpg';
+import producto4 from '../assets/producto4.jpg';
+import producto5 from '../assets/producto5.jpg';
+import producto6 from '../assets/producto6.jpg';
+import producto7 from '../assets/producto7.jpg';
+import producto8 from '../assets/producto8.jpg';
+import producto9 from '../assets/producto9.jpg';
+
+
+
+
+
 
 export const ProductosAlmacenados = [
   {
@@ -54,5 +65,59 @@ export const ProductosAlmacenados = [
     categoria: "Ropa mujer",
     img: producto3
   },
+
+  {
+    id: 7,
+    precio: 5990,
+    nombre: "Gorra ploma",
+    categoria: "Ropa hombre",
+    img: producto4
+  },
+
+
+  {
+    id: 8,
+    precio: 49000,
+    nombre: "Falda negra",
+    categoria: "Ropa mujer",
+    img: producto5
+  },
+
+
+  {
+    id: 9,
+    precio: 35000,
+    nombre: "Tacones negros",
+    categoria: "Ropa mujer",
+    img: producto6
+  },
+
+
+  {
+    id: 10,
+    precio: 62000,
+    nombre: "Chaqueta cuero negro",
+    categoria: "Ropa mujer",
+    img: producto7
+  },
+
+
+  {
+    id: 11,
+    precio: 5000,
+    nombre: "Jockey Burdeo",
+    categoria: "Ropa mujer",
+    img: producto8
+  },
+
+
+  {
+    id: 12,
+    precio: 17000,
+    nombre: "Pijama Satín",
+    categoria: "Ropa mujer",
+    img: producto9
+  },
+
 
 ];

@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 
 //Importar las páginas
 import Inicio from "./pages/Inicio";
+import InicioSesion from "./pages/InicioSesion";
+import Registro from "./pages/Registro";
 import Nosotros from "./pages/Nosotros";
 import Contacto from "./pages/Contacto";
 import Carrito from "./pages/Carrito";
@@ -21,6 +23,7 @@ import Blog from './pages/Blog';
 import Checkout from './pages/Checkout';
 import InicioAdmin from './pages/admin/InicioAdmin';
 import Reportes from './pages/Reportes';
+import Usuario from './pages/admin/Usuario'
 
 function App() {
   return (
@@ -30,8 +33,11 @@ function App() {
      {/* Routes */}
       <Routes>
           <Route path="/" element={<Inicio />} />
-
+          
+          <Route path="/inicio-sesion" element={<InicioSesion />} />
+          <Route path="/registro" element={<Registro />} />
           <Route path="/nosotros" element={<Nosotros />}/>
+          <Route path="/contacto" element={<Contacto />}/>
           <Route path="/productos" element={<Productos />}/>
           <Route path="/blog" element={<Blog />}/>
           <Route path="/checkout" element={<Checkout />}/>
@@ -40,6 +46,7 @@ function App() {
 
           <Route>
             <Route path="/inicioAdmin" element={<InicioAdmin />}/>
+            <Route path="/usuarios" element={<Usuario />}/>
         <Route path="/carrito" element={<Carrito />} />
         </Route>
 

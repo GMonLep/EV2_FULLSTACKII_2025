@@ -26,8 +26,8 @@ export default function GraficoProductos() {
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="text-center mb-4">Gráfico de precios</h2>
+    <div className="container bg-light py-5">
+      <h2 className="text-center text-dark mb-4 ">Gráfico de precios</h2>
       <Bar data={data} options={options} />
     </div>
   );
