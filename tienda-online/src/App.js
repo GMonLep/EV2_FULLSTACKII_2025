@@ -24,6 +24,7 @@ import Checkout from './pages/Checkout';
 import InicioAdmin from './pages/admin/InicioAdmin';
 import Reportes from './pages/Reportes';
 import Usuario from './pages/admin/Usuario'
+import ListaUsuario from './pages/admin/ListaUsuario';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route>
             <Route path="/inicioAdmin" element={<InicioAdmin />}/>
             <Route path="/usuarios" element={<Usuario />}/>
+            <Route path="/ListaUsuario" element={<Usuario />}/>
         <Route path="/carrito" element={<Carrito />} />
         </Route>
 
