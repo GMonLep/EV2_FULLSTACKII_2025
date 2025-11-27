@@ -80,17 +80,11 @@ function Inicio(){
 
             <section className="bg-primary text-white py-5">
                  <div className="container text-center">
-                    <h1 className="display-5 fw-bold ">Categorías</h1>
-                    <p className="lead ">Tenemos diferentes categorías para explorar y cubrir todas tus necesidades. Encuentra lo que necesitas sólo aqui exclusivamente aquí y en ninguna parte más que aquí.</p>
+                    <h1 className="display-5 fw-bold mb-3 ">¡Encuentranos aquí!</h1>
+                    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Duoc%20Uc,%20Puerto%20Montt,%20Chile+(LA%20TIENDITA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/">Demografie Karte Deutschland</a></iframe>
                 </div>
             </section>
 
-             <section className="py-5 ">
-                <div className="row justify-content-center text-center">
-                    <h1 className="display-6 fw-bold mb-2">Ropa mujer</h1>
-
-                </div>
-            </section>
         </div>
   
     );
