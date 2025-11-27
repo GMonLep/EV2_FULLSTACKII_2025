@@ -1,8 +1,19 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Reportes from "../Reportes"
+import { useEffect } from "react";
 
 function Inicio(){
+  useEffect(() => {
+    const usuario = JSON.parse(localStorage.getItem("usuario"));
+    if (!usuario || usuario.rol !== "admin") {
+      window.location.href = "/inicio-sesion";
+    }
+  }, []);
+  const cerrarSesion = () => {
+    localStorage.removeItem("usuario")
+    window.location.href = "/inicio-sesion";
+  };
 
     return(
 
@@ -17,8 +28,7 @@ function Inicio(){
                 <span className="col ml-0">
                     <div className="row bg-primary">
                         <a className="mb-4" href="./usuarios"><button className="btn btn-dark fw-bold btn-lg" >👤 Usuarios</button></a>
-                        <a className="mb-4" href="./"><button className="btn btn-dark fw-bold btn-lg" >📑 Órdenes</button></a>
-                        <a className="mt-5" href="./"><button className="btn btn-light fw-bold btn-lg" >Cerrar sesión</button></a>
+                        <button className="btn btn-light fw-bold btn-lg mt-5" onClick={cerrarSesion}>Cerrar sesión</button>
                     </div>
                 </span>
                 <span className="col-sm-10" ><Reportes/></span>

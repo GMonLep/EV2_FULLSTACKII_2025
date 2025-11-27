@@ -1,8 +1,10 @@
-// src/pages/Registro.jsx
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+
+const API_URL = "https://usuarioservice-p81j.onrender.com/api/usuarios";
 
 function Registro() {
   const [nombre, setNombre] = useState("");
@@ -10,44 +12,46 @@ function Registro() {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleRegistro = (e) => {
+  const handleRegistro = async (e) => {
     e.preventDefault();
 
-    // Validación de campos vacíos
     if (!nombre || !email || !password || !confirmPassword) {
-      toast.error("Por favor completa todos los campos", {
-        position: "top-right",
-        autoClose: 2000,
-      });
+      toast.error("Por favor completa todos los campos", { autoClose: 2000 });
       return;
     }
 
-    // Validación de contraseñas
     if (password !== confirmPassword) {
-      toast.error("Las contraseñas no coinciden", {
-        position: "top-right",
-        autoClose: 2000,
-      });
+      toast.error("Las contraseñas no coinciden", { autoClose: 2000 });
       return;
     }
 
-    // Aquí iría la lógica real de registro (API, localStorage, etc.)
-    toast.success("¡Registro exitoso!", {
-      position: "top-right",
-      autoClose: 2000,
-    });
+    try {
+      await axios.post(API_URL, {
+        nombre,
+        rol: "usuario",
+        correo: email,
+        contrasenia: password
+      });
 
-    // Limpiar formulario
-    setNombre("");
-    setEmail("");
-    setPassword("");
-    setConfirmPassword("");
+      toast.success("¡Registro exitoso!", { autoClose: 2000 });
+
+      setNombre("");
+      setEmail("");
+      setPassword("");
+      setConfirmPassword("");
+
+    } catch (error) {
+      toast.error("Error al registrar. Intenta nuevamente.", {
+        autoClose: 2000,
+      });
+    }
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center" style={{  paddingTop: 20, minHeight: "80vh" }}>
+    <div className="container d-flex justify-content-center align-items-center" style={{ paddingTop: 20, minHeight: "80vh" }}>
       <div className="card p-4 shadow" style={{ maxWidth: "450px", width: "100%" }}>
         <h2 className="text-center mb-4">Registrarse</h2>
+
         <form onSubmit={handleRegistro}>
           <div className="mb-3">
             <label htmlFor="nombre" className="form-label">Nombre completo</label>
@@ -99,10 +103,12 @@ function Registro() {
 
           <button type="submit" className="btn btn-primary w-100">Registrarse</button>
         </form>
+
         <p className="text-center mt-3">
-          ¿Ya tienes cuenta? <a href="/inicioAdmin">Inicia sesión</a>
+          ¿Ya tienes cuenta? <a href="/inicio-sesion">Inicia sesión</a>
         </p>
       </div>
+
       <ToastContainer />
     </div>
   );
