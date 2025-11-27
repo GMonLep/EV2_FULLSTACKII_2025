@@ -28,6 +28,12 @@ JavaScript: Lógica de la aplicación, manejo del estado y renderizado dinámico
 
 HTML & CSS: Base estructural y estilización personalizada.
 
+Render: despliege página en la web: https://ev2-fullstackii-2025.onrender.com/
+
+🖥️ Backend
+
+Swagger: testing del microservicio usuarios: https://usuarioservice-p81j.onrender.com/swagger-ui/index.html#
+
 🎨 Frameworks y librerías de estilos
 
 Bootstrap 5
