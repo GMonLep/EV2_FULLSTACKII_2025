@@ -9,12 +9,15 @@ La Tiendita es una página web moderna dedicada a la venta de ropa para todos lo
 
 👚 Catálogo de productos
 Amplia variedad de prendas con imágenes, descripciones y precios actualizados.
+<img width="1366" height="857" alt="screencapture-ev2-fullstackii-2025-onrender-productos-2025-11-27-14_12_04" src="https://github.com/user-attachments/assets/b38bd2f2-d21a-4854-a596-fc66326fc1de" />
 
 🛒 Carrito de compras funcional
 Agrega, elimina o modifica productos, con almacenamiento persistente gracias a LocalStorage.
+<img width="1348" height="559" alt="image" src="https://github.com/user-attachments/assets/fa1fb8e4-9b3c-4c35-a167-fc400ac9dc68" />
 
 📊 Visualización de datos con Chart.js
 Gráfico dinámico que muestra los productos y sus precios visualmente.
+
 
 📱 Diseño responsive
 Compatible con dispositivos móviles, tablets y computadores.
