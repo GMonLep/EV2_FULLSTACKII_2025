@@ -1,7 +1,9 @@
 import Tarjetas from '../assets/tarjetas.jpg';
 
 export default function Checkout(){
+  
     return(
+      
         <div style={{paddingTop: '0', minHeight: '80vh' }}>
         <section className="bg-primary text-white py-5">
             <div className="container text-center">
