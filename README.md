@@ -1,5 +1,8 @@
 🛍️ La Tiendita
 
+<img width="1343" height="766" alt="screencapture-ev2-fullstackii-2025-onrender-2025-11-27-14_09_38" src="https://github.com/user-attachments/assets/17347046-17dc-4ce3-87cd-fe5df1c14586" />
+
+
 La Tiendita es una página web moderna dedicada a la venta de ropa para todos los estilos. Su diseño limpio, navegación fluida y experiencia enfocada en el usuario permiten explorar productos de forma sencilla y disfrutar de un proceso de compra intuitivo.
 
 ✨ Características principales
