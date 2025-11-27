@@ -36,6 +36,10 @@ HTML & CSS: Base estructural y estilización personalizada.
 
 Render: despliege página en la web: https://ev2-fullstackii-2025.onrender.com/
 
+Pruebas con Jasmine+Karma: 
+<img width="1022" height="331" alt="image" src="https://github.com/user-attachments/assets/876771f6-8c79-489f-9aab-4c6636069355" />
+
+
 🖥️ Backend
 
 Swagger: testing del microservicio usuarios: https://usuarioservice-p81j.onrender.com/swagger-ui/index.html#
